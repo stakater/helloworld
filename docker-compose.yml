@@ -1,0 +1,9 @@
+version: "2"
+services:
+  helloworld:
+    build: ./
+    volumes:
+        - ~/.gradle:/root/.gradle
+        - ~/.m2:/root/.m2
+    ports:
+        - 8080:8080
